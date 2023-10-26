@@ -1,6 +1,6 @@
 .. _tutorials:
 
-Basic tutorials
+Tutorials
 ===============
 
 .. only:: html
@@ -21,9 +21,17 @@ Basic tutorials
      of pykep, and thus might fail to execute correctly in the online interactive
      notebooks.
 
+-------------------------------
+
+Basic
+^^^^^^^^^^^
+Start with these tutorials to get the basic gist of how `pykep` works and its conventions when dealing with
+astrodynamical notation and computations.
+
 .. toctree::
   :maxdepth: 1
 
   notebooks/anomalies
   notebooks/epochs
+  notebooks/interface_to_spice
 

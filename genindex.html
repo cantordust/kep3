@@ -18,12 +18,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=c5ced968eda925caa686" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -33,9 +33,9 @@
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
-  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=c5ced968eda925caa686" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=c5ced968eda925caa686"></script>
 
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
@@ -126,13 +126,14 @@
   
   
   
+  
     
     
       
     
     
-    <img src="_static/pykep_logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="_static/pykep_logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="_static/pykep_logo.png" class="logo__image only-light" alt="pykep 0.0.1 documentation - Home"/>
+    <script>document.write(`<img src="_static/pykep_logo.png" class="logo__image only-dark" alt="pykep 0.0.1 documentation - Home"/>`);</script>
   
   
 </a></div>
@@ -141,12 +142,19 @@
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="api.html">API</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="anomalies.html">Convert Anomalies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="constants.html">Global constants</a></li>
+<li class="toctree-l2"><a class="reference internal" href="anomalies.html">Anomalies Conversions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="elements.html">Orbital Elements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="epoch.html">Epoch class</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lambert.html">Lambert class</a></li>
+<li class="toctree-l2"><a class="reference internal" href="planet.html">Planet class</a></li>
+<li class="toctree-l2"><a class="reference internal" href="udplas.html">List of user implemented planets (UDPLAs)</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="tutorials.html">Basic tutorials</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="tutorials.html">Tutorials</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="notebooks/anomalies.html">The various anomalies in pykep</a></li>
 <li class="toctree-l2"><a class="reference internal" href="notebooks/epochs.html">Epochs and Julian Dates</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notebooks/interface_to_spice.html">Interfacing to SPICE and JPL DE ephs</a></li>
 </ul>
 </li>
 </ul>
@@ -300,14 +308,43 @@ document.write(`
 <h1 id="index">Index</h1>
 
 <div class="genindex-jumpbox">
- <a href="#E"><strong>E</strong></a>
+ <a href="#B"><strong>B</strong></a>
+ | <a href="#D"><strong>D</strong></a>
+ | <a href="#E"><strong>E</strong></a>
  | <a href="#F"><strong>F</strong></a>
+ | <a href="#G"><strong>G</strong></a>
  | <a href="#H"><strong>H</strong></a>
+ | <a href="#I"><strong>I</strong></a>
+ | <a href="#J"><strong>J</strong></a>
+ | <a href="#K"><strong>K</strong></a>
+ | <a href="#L"><strong>L</strong></a>
  | <a href="#M"><strong>M</strong></a>
  | <a href="#N"><strong>N</strong></a>
+ | <a href="#P"><strong>P</strong></a>
+ | <a href="#R"><strong>R</strong></a>
+ | <a href="#S"><strong>S</strong></a>
+ | <a href="#T"><strong>T</strong></a>
+ | <a href="#V"><strong>V</strong></a>
+ | <a href="#X"><strong>X</strong></a>
  | <a href="#Z"><strong>Z</strong></a>
  
 </div>
+<h2 id="B">B</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="udplas.html#pykep.udpla.de440s.body_list">body_list() (pykep.udpla.de440s method)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="D">D</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="udplas.html#pykep.udpla.de440s">de440s (class in pykep.udpla)</a>
+</li>
+  </ul></td>
+</tr></table>
+
 <h2 id="E">E</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
@@ -315,11 +352,41 @@ document.write(`
 </li>
       <li><a href="anomalies.html#pykep.e2f_v">e2f_v() (in module pykep)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="anomalies.html#pykep.e2m">e2m() (in module pykep)</a>
 </li>
       <li><a href="anomalies.html#pykep.e2m_v">e2m_v() (in module pykep)</a>
+</li>
+      <li><a href="elements.html#pykep.el_type">el_type (class in pykep)</a>
+</li>
+      <li><a href="planet.html#pykep.planet.elements">elements() (pykep.planet method)</a>
+</li>
+      <li><a href="planet.html#pykep.planet.eph">eph() (pykep.planet method)</a>
+
+      <ul>
+        <li><a href="udplas.html#pykep.udpla.spice.eph">(pykep.udpla.spice method)</a>
+</li>
+        <li><a href="udplas.html#pykep.udpla.tle.eph">(pykep.udpla.tle method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="planet.html#pykep.planet.eph_v">eph_v() (pykep.planet method)</a>
+
+      <ul>
+        <li><a href="udplas.html#pykep.udpla.tle.eph_v">(pykep.udpla.tle method)</a>
+</li>
+      </ul></li>
+      <li><a href="epoch.html#pykep.epoch">epoch (class in pykep)</a>
+</li>
+      <li><a href="epoch.html#pykep.epoch.julian_type">epoch.julian_type (class in pykep)</a>
+</li>
+      <li><a href="epoch.html#pykep.epoch.string_format">epoch.string_format (class in pykep)</a>
+</li>
+      <li><a href="elements.html#pykep.eq2ic">eq2ic() (in module pykep)</a>
+</li>
+      <li><a href="elements.html#pykep.eq2par">eq2par() (in module pykep)</a>
+</li>
+      <li><a href="planet.html#pykep.planet.extract">extract() (pykep.planet method)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -352,6 +419,44 @@ document.write(`
   </ul></td>
 </tr></table>
 
+<h2 id="G">G</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="planet.html#pykep.planet.get_extra_info">get_extra_info() (pykep.planet method)</a>
+
+      <ul>
+        <li><a href="udplas.html#pykep.udpla.spice.get_extra_info">(pykep.udpla.spice method)</a>
+</li>
+        <li><a href="udplas.html#pykep.udpla.tle.get_extra_info">(pykep.udpla.tle method)</a>
+</li>
+      </ul></li>
+      <li><a href="planet.html#pykep.planet.get_mu_central_body">get_mu_central_body() (pykep.planet method)</a>
+
+      <ul>
+        <li><a href="udplas.html#pykep.udpla.tle.get_mu_central_body">(pykep.udpla.tle method)</a>
+</li>
+      </ul></li>
+      <li><a href="planet.html#pykep.planet.get_mu_self">get_mu_self() (pykep.planet method)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="planet.html#pykep.planet.get_name">get_name() (pykep.planet method)</a>
+
+      <ul>
+        <li><a href="udplas.html#pykep.udpla.de440s.get_name">(pykep.udpla.de440s method)</a>
+</li>
+        <li><a href="udplas.html#pykep.udpla.spice.get_name">(pykep.udpla.spice method)</a>
+</li>
+        <li><a href="udplas.html#pykep.udpla.tle.get_name">(pykep.udpla.tle method)</a>
+</li>
+      </ul></li>
+      <li><a href="planet.html#pykep.planet.get_radius">get_radius() (pykep.planet method)</a>
+</li>
+      <li><a href="planet.html#pykep.planet.get_safe_radius">get_safe_radius() (pykep.planet method)</a>
+</li>
+  </ul></td>
+</tr></table>
+
 <h2 id="H">H</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
@@ -368,6 +473,54 @@ document.write(`
   </ul></td>
 </tr></table>
 
+<h2 id="I">I</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="elements.html#pykep.ic2eq">ic2eq() (in module pykep)</a>
+</li>
+      <li><a href="elements.html#pykep.ic2par">ic2par() (in module pykep)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="planet.html#pykep.planet.is_">is_() (pykep.planet method)</a>
+</li>
+      <li><a href="lambert.html#pykep.lambert_problem.iters">iters (pykep.lambert_problem property)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="J">J</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="epoch.html#pykep.epoch.jd">jd (pykep.epoch property)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="udplas.html#pykep.udpla.jpl_lp">jpl_lp (class in pykep.udpla)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="K">K</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="udplas.html#pykep.udpla.keplerian">keplerian (class in pykep.udpla)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="udplas.html#pykep.udpla.de440s.kernel_file">kernel_file() (pykep.udpla.de440s method)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="L">L</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="lambert.html#pykep.lambert_problem">lambert_problem (class in pykep)</a>
+</li>
+  </ul></td>
+</tr></table>
+
 <h2 id="M">M</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
@@ -375,11 +528,17 @@ document.write(`
 </li>
       <li><a href="anomalies.html#pykep.m2e_v">m2e_v() (in module pykep)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="anomalies.html#pykep.m2f">m2f() (in module pykep)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="anomalies.html#pykep.m2f_v">m2f_v() (in module pykep)</a>
+</li>
+      <li><a href="epoch.html#pykep.epoch.mjd">mjd (pykep.epoch property)</a>
+</li>
+      <li><a href="epoch.html#pykep.epoch.mjd2000">mjd2000 (pykep.epoch property)</a>
+</li>
+      <li><a href="lambert.html#pykep.lambert_problem.mu">mu (pykep.lambert_problem property)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -391,11 +550,85 @@ document.write(`
 </li>
       <li><a href="anomalies.html#pykep.n2f_v">n2f_v() (in module pykep)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="anomalies.html#pykep.n2h">n2h() (in module pykep)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="anomalies.html#pykep.n2h_v">n2h_v() (in module pykep)</a>
+</li>
+      <li><a href="lambert.html#pykep.lambert_problem.Nmax">Nmax (pykep.lambert_problem property)</a>
+</li>
+      <li><a href="epoch.html#pykep.epoch.now">now() (pykep.epoch static method)</a>
+</li>
+      <li><a href="udplas.html#pykep.udpla.null_udpla">null_udpla (class in pykep.udpla)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="P">P</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="elements.html#pykep.par2eq">par2eq() (in module pykep)</a>
+</li>
+      <li><a href="elements.html#pykep.par2ic">par2ic() (in module pykep)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="planet.html#pykep.planet.period">period() (pykep.planet method)</a>
+</li>
+      <li><a href="planet.html#pykep.planet">planet (class in pykep)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="R">R</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="lambert.html#pykep.lambert_problem.r0">r0 (pykep.lambert_problem property)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="lambert.html#pykep.lambert_problem.r1">r1 (pykep.lambert_problem property)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="S">S</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="udplas.html#pykep.udpla.spice">spice (class in pykep.udpla)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="T">T</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="udplas.html#pykep.udpla.tle">tle (class in pykep.udpla)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="lambert.html#pykep.lambert_problem.tof">tof (pykep.lambert_problem property)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="V">V</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="lambert.html#pykep.lambert_problem.v0">v0 (pykep.lambert_problem property)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="lambert.html#pykep.lambert_problem.v1">v1 (pykep.lambert_problem property)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="X">X</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="lambert.html#pykep.lambert_problem.x">x (pykep.lambert_problem property)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -473,8 +706,8 @@ By Dario Izzo and Francesco Biscani
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+  <script src="_static/scripts/bootstrap.js?digest=c5ced968eda925caa686"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686"></script>
 
   <footer class="bd-footer">
   </footer>
